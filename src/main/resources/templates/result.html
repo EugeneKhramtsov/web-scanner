@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Web Scanner</title>
+  <meta http-equiv="Content-Type" lookingFor="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<table>
+  <tr th:each="element : ${scannerResultTo}">
+    <td th:text="${element.key}">key</td>
+    <td th:text="${element.value}">value</td>
+  </tr>
+</table>
+<a href="/scanner">Scan another link</a>
+</body>
+</html>

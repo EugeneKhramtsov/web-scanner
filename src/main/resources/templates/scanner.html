@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Web Scanner</title>
+  <meta http-equiv="Content-Type" lookingFor="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Web Scanner</h1>
+<form action="#" th:action="@{/scanner}" th:object="${scannerInputTo}" method="post">
+  <p>Start Url: <input type="text" th:field="*{url}" /></p>
+  <p>Looking For: <input type="text" th:field="*{lookingFor}" /></p>
+  <p>Number of Pages to Scan: <input type="text" th:field="*{maxNumberOfPagesToScan}" /></p>
+  <p><input type="submit" value="Scan" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

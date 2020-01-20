@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Web-Scanner
+  task.execution.pool:
+    core-size: 4
+    max-size: 4
+    queue-capacity: 100
+    keep-alive: 10
+    thread-name-prefix: scanner-
